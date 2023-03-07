@@ -72,17 +72,16 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if (typeof letra !== 'string' || letra.length !== 1 || !/^[a-zA-Z]$/.test(letra)) {
-      return "Dato incorrecto";
+   if (typeof letra !== 'string' || letra.length !== 1) {
+      return 'Dato incorrecto';
     }
-    const vocal = /[aeiou]/i.test(letra);
-    if (vocal) {
-      return "Es vocal";
+    
+    // Verificar si la letra es una vocal
+    if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+      return 'Es vocal';
     } else {
-      return "Dato incorrecto";
+      return 'Dato incorrecto';
     }
-
-
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
