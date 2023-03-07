@@ -132,9 +132,9 @@ function diaDeLaSemana(numeroDeDia) {
    // Tu código:
    if (numeroDeDia === 1 || numeroDeDia === 7) {
       return "Es fin de semana";
-    } else {
+   } else {
       return "Es dia laboral";
-    }
+   }
 }
 
 function empiezaConNueve(num) {
@@ -153,8 +153,8 @@ function todosIguales(array) {
       if (array[i] !== array[i+1]) {
         return false;
       }
-    }
-    return true;
+   }
+   return true;
 }
 
 function mesesDelAño(array) {
@@ -200,8 +200,8 @@ function mayorACien(array) {
     if (array[i] > 100) {
       mayoresACien.push(array[i]);
     }
-  }
-  return mayoresACien;
+   }
+   return mayoresACien;
 }
 
 /* ----------------------------------------------------------------------------------
@@ -217,18 +217,17 @@ function breakStatement(num) {
    // Tu código:
    const resultado = [];
 
-  for (let i = 0; i < 10; i++) {
-    num += 2;
-    resultado.push(num);
+   for (let i = 0; i < 10; i++) {
+      num += 2;
+      resultado.push(num);
 
-    if (num === i) {
-      return 'Se interrumpió la ejecución';
-      // Si se cumple la condición, se interrumpe la ejecución con break
-      // break;
-    }
-  }
-
-  return resultado;
+      if (num === i) {
+         return 'Se interrumpió la ejecución';
+         // Si se cumple la condición, se interrumpe la ejecución con break
+         // break;
+      }
+   }
+   return resultado;
 }
 
 function continueStatement(num) {
